@@ -1,0 +1,52 @@
+{
+  "name": "dsh-tishi",
+  "version": "0.1.0",
+  "description": "Sidebar workspace status badges: aggregate pending / running / unread-done state of every session in a workspace, shown in front of the workspace folder icon.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "workspace",
+    "status-badges"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yerwan233/dsh-tishi.git"
+  },
+  "homepage": "https://github.com/yerwan233/dsh-tishi#readme",
+  "bugs": {
+    "url": "https://github.com/yerwan233/dsh-tishi/issues"
+  },
+  "scripts": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
